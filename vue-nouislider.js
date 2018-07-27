@@ -43,14 +43,12 @@ Vue.component('v-nus', {
   },
   watch: {
     'value': function (nv) {
-      if (!this.init) {
-        this.init = true
-      } else {
+      if (this.init) {
         var nus = this.slider.noUiSlider.get()
         if (!Array.isArray(nus)) nus = [nus]
-        if (JSON.stringify(nus) !== JSON.stringify(nv)) {
-          this.slider.noUiSlider.set(nv)
-        }
+        if (JSON.stringify(nus) !== JSON.stringify(nv)) this.slider.noUiSlider.set(nv)
+      } else {
+        this.init = true
       }
     }
   }

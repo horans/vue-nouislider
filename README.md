@@ -47,6 +47,11 @@ data: {
 <v-nus :log="true" :config="your_config" :value="your_value" @update="your_value = $event" />
 ```
 
+## References
+
+Inspiration: [VueJS-noUiSlider](https://github.com/BradKriss/VueJS-noUiSlider)
+Linter: [standard](https://github.com/standard/standard)
+
 ## Change Log
 
 __180727__
