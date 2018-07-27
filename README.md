@@ -46,3 +46,15 @@ data: {
 ```html
 <v-nus :log="true" :config="your_config" :value="your_value" @update="your_value = $event" />
 ```
+
+## Change Log
+
+__180727__
+
+* allow two-way update
+
+---
+
+__180726__
+
+* initial release
