@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Vue noUiSlider</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/leongersen/noUiSlider/distribute/nouislider.min.css">
+  </head>
+  <body style="margin:3rem;text-align:center">
+    <h1>Vue noUiSlider <small>(Demo Basic)</small></h1>
+    <section id="app">
+      <v-nus :config="your_config" :value="your_value" @update="your_value = $event" ></v-nus>
+      <p style="margin-top:2rem">{{ your_value }}</p>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdn.jsdelivr.net/gh/leongersen/noUiSlider/distribute/nouislider.min.js"></script>
+    <script src="../vue-nouislider.js"></script>
+<script>
+/* global Vue */
+/* eslint no-unused-vars: ["error", { "varsIgnorePattern": "vm" }] */
+var vm = new Vue({
+  el: '#app',
+  data: {
+    your_config: {
+      step: 1,
+      range: {
+        'min': 1,
+        'max': 10
+      }
+    },
+    your_value: [3, 6]
+  }
+})
+</script>
+  </body>
+</html>
