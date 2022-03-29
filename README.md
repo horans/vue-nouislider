@@ -1,6 +1,6 @@
 # Vue noUiSlider
 
-a Vue component for [noUiSlider](https://github.com/leongersen/noUiSlider)
+a Vue2 component for [noUiSlider](https://github.com/leongersen/noUiSlider)
 
 ## Install
 
@@ -54,14 +54,18 @@ data: {
 
 ## Change Log
 
-__180818__
+### 220329
+
+* updated demo for vue2
+
+### 180818
 
 * add demo
 
-__180727__
+### 180727
 
 * allow two-way update
 
-__180726__
+### 180726
 
 * initial release
